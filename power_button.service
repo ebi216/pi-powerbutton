@@ -1,0 +1,9 @@
+[Unit]
+Description=power button
+After=syslog.service
+
+[Service]
+ExecStart=/opt/power_button/power_button.sh
+
+[Install]
+WantedBy=multi-user.target
